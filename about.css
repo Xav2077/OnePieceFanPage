@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navegacion */
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    gap: 50px;
+    align-items: center;
+    padding: 30px;
+}
+
+.karazuno{
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-style: oblique;
+    letter-spacing: 1px;
+}
+
+[href="#"]{
+    color: orange;
+}
+
+header>ul{
+    display: flex;
+}
+
+header>ul li{
+    margin-left: 15px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+header>ul li a{
+    text-decoration: none;
+    transition: all .3s;
+    padding-bottom: 7px;
+}
+header>ul li a:hover{
+    color: orange;
+    cursor: pointer;
+    border-bottom: 1px solid orange;
+}
+
+.contenido{
+    padding: 50px;
+    width: 50%;
+    height: 30%;
+    margin: 100px auto;
+    border: 2px solid black;
+}
+.contenido h2{
+    border-bottom: 2px solid black;
+    width: 20%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.porQueDeEstaPagina{
+    line-height: 150%;
+}
+
+.figuritas{
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.figuritas span{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#circleOne{
+    background-color:rgb(179, 221, 255);
+    bottom: -20px;
+    left: 80px;
+}
+#circleTwo{
+    background-color:rgb(179, 221, 255);
+    bottom: -20px;
+    left: 130px;
+}
+#circleThree{
+    background-color:rgb(149, 207, 255);
+    bottom: 50px;
+    left: 100px;
+}
+#circleFour{
+    background-color:rgb(92, 44, 0);
+    width: 10px;
+    height: 40px;
+    border-radius: 100%;
+    bottom: 100px;
+    left: 150px;
+}
+#circleFive{
+    background-color:rgb(92, 44, 0);
+    width: 10px;
+    height: 40px;
+    border-radius: 100%;
+    bottom: 100px;
+    left: 170px;
+}
+#sombrero{
+    background-color: brown;
+    width: 60px;
+    height: 40px;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+    bottom: 145px;
+    left: 120px;
+}
+#sombreroBase{
+    background-color: brown;
+    border-top: 2px solid black;
+    width: 90px;
+    height: 5px;
+    bottom: 140px;
+    left: 100px;
+}
+
+.borderStraw{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 120px;
+    clip-path: circle(50px);
+    opacity: 0.1;
+}
+
+.left{
+    left: 10%;
+    top: 10%;
+}
+.right{
+    left: 80%;
+    top: 10%;
+}
+.sleft{
+    left: 10%;
+    top: 60%;
+}
+.sright{
+    left: 80%;
+    top: 60%;
+}
+.left{
+    left: 10%;
+    top: 10%;
+}

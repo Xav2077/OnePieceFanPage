@@ -1,0 +1,246 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* navegacion */
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    gap: 50px;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo{
+    font-weight: bolder;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-style: oblique;
+    letter-spacing: 1px;
+    color: white;
+}
+[href="#"]{
+    color: red;
+}
+
+header>ul{
+    display: flex;
+}
+
+header>ul li{
+    margin-left: 15px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+header>ul li a{
+    text-decoration: none;
+    transition: all .3s;
+    color: white;
+    padding-bottom: 7px;
+}
+header>ul li a:hover{
+    color: red;
+    cursor: pointer;
+    border-bottom: 1px solid red;
+}
+/* fin del header */
+
+#sec1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.205),rgba(0, 0, 0, 0.171)),url(img/fondo_Nubes\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.middle{
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    bottom: 0;
+    text-align: center;
+}
+.middle h1{
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: -4px 0 0 black;
+}
+.middle img{
+    width: 400px;
+    clip-path: inset(30% 10% 30% 10%);
+    position: absolute;
+    top: -78%;
+    left: 33.5%;
+    filter: drop-shadow(-10px 10px 0 black);
+    animation-name: strawhat;
+    animation-duration: 5s;
+}
+
+@keyframes strawhat {
+    0%{
+        transform: translateY(10px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* */
+
+#mas{
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    width: 55px;
+    height: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#mas:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+#chompas{
+    position: fixed;
+    width: 10%;
+    bottom: 0;
+    left: 20px;
+    transition: all .3s;
+}
+#chompas:hover{
+    transform: rotateZ(20deg);
+}
+
+.tooltip {
+    position:fixed; /* making the .tooltip span a container for the tooltip text */
+    border-bottom:1px dashed #000; /* little indicater to indicate it's hoverable */
+}
+.tooltip:before {
+    content: attr(data-text); /* here's the magic */
+    position:absolute;
+    
+    /* vertically center */
+    top:-180px;
+    transform:translateY(-50%);
+    
+    /* move to right */
+    left:150%;
+    margin-left:15px; /* and add a small left margin */
+
+    /* basic styles */
+    width:200px;
+    padding:10px;
+    border-radius:10px;
+    background:#000;
+    color: #fff;
+    text-align:center;
+
+    display:none; /* hide by default */
+}
+.tooltip:hover:before {
+    display:block;
+}
+
+
+
+
+#sec2{
+    height: 240vh;
+    width: 100%;
+    margin: 0 auto;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)), url(img/One\ piece.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    border-top: 5px solid black; 
+}
+.cubo{
+    height: 400px;
+    background-color: transparent;
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+}
+.cubo h2, .cubo p, .cubo img {
+    padding: 30px;
+}
+.cubo h2{
+    font-weight: bolder;
+    padding-bottom: 0;
+    font-size: 2em;
+}
+.cubo p{
+    padding-top: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+.cubo h2, .cubo p{
+    border-left: 2px solid black;
+}
+
+.left{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+.cubo > img{
+    border: double black 6px;
+}
+
+footer{
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+}
+
+h4{
+    color:white;
+    font-weight: bolder;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 20px;
+}
+footer>ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 5px;
+}
+footer>ul li{
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+footer>ul li a{
+    color: white !important;
+    text-decoration: none;
+    padding: 10px;
+    border: transparent 2px solid;
+}
+footer>ul li a:hover{
+    border: white 2px solid;
+}
